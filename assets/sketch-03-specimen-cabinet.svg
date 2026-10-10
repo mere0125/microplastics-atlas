@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Sketch 3: Specimen cabinet</title>
+  <desc id="desc">A concept sketch for separate concentration distributions by compatible marine setting and unit.</desc>
+  <rect width="1200" height="700" fill="#f2f0e9"/>
+  <path d="M105 93 H1096" fill="none" stroke="#183139" stroke-width="2"/>
+  <text x="105" y="65" font-family="Georgia,serif" font-size="28" fill="#183139">03 / specimen cabinet</text>
+  <g transform="translate(115 155)" stroke="#183139" stroke-width="1.5" fill="none">
+    <rect x="0" y="0" width="455" height="180"/><rect x="510" y="0" width="455" height="180"/>
+    <rect x="0" y="225" width="455" height="180"/><rect x="510" y="225" width="455" height="180"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="14" fill="#183139" letter-spacing="2">
+    <text x="140" y="190">OCEAN WATER · PIECES/M³</text><text x="650" y="190">NURDLE PATROL · PIECES/10 MIN</text>
+    <text x="140" y="415">BEACH · PIECES/M³</text><text x="650" y="415">SEDIMENT · PIECES/KG D.W.</text>
+  </g>
+  <g opacity=".7">
+    <g fill="#2d7188"><circle cx="178" cy="275" r="3"/><circle cx="187" cy="267" r="4"/><circle cx="198" cy="281" r="3"/><circle cx="212" cy="262" r="5"/><circle cx="237" cy="276" r="4"/><circle cx="301" cy="269" r="3"/><circle cx="447" cy="275" r="3"/></g>
+    <g fill="#c27b43"><circle cx="687" cy="275" r="3"/><circle cx="696" cy="265" r="4"/><circle cx="711" cy="279" r="3"/><circle cx="739" cy="268" r="4"/><circle cx="821" cy="273" r="3"/><circle cx="1018" cy="270" r="4"/></g>
+    <g fill="#8e789d"><circle cx="177" cy="500" r="4"/><circle cx="196" cy="493" r="3"/><circle cx="249" cy="506" r="4"/><circle cx="353" cy="496" r="3"/><circle cx="496" cy="502" r="4"/></g>
+    <g fill="#8e4f43"><circle cx="688" cy="501" r="4"/><circle cx="702" cy="490" r="3"/><circle cx="742" cy="506" r="4"/><circle cx="875" cy="498" r="3"/><circle cx="1006" cy="501" r="4"/></g>
+  </g>
+  <g fill="none" stroke="#183139" stroke-width="2">
+    <path d="M150 275 H530"/><path d="M660 275 H1040"/><path d="M150 500 H530"/><path d="M660 500 H1040"/>
+    <path d="M212 246 V304"/><path d="M739 246 V304"/><path d="M249 471 V529"/><path d="M742 471 V529"/>
+  </g>
+  <text x="105" y="635" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#183139">four drawers, three units — never collapse incompatible measurements</text>
+</svg>

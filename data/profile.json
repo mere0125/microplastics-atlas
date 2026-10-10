@@ -1,0 +1,306 @@
+{
+  "generated_at": "2026-10-09T16:33:38.056252+00:00",
+  "source_rows": 29076,
+  "source_columns": 34,
+  "derived_rows": 29076,
+  "derived_columns": 14,
+  "date_min": "1972-04-20",
+  "date_max": "2026-04-28",
+  "missing_counts": {
+    "id": 0,
+    "date": 0,
+    "year": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "ocean": 1389,
+    "region": 15767,
+    "country": 17392,
+    "medium": 0,
+    "sampling_method": 0,
+    "measurement": 0,
+    "unit": 0,
+    "concentration_class": 0,
+    "reference": 0
+  },
+  "unique_counts": {
+    "id": 29076,
+    "date": 7597,
+    "year": 42,
+    "latitude": 17403,
+    "longitude": 17690,
+    "ocean": 5,
+    "region": 82,
+    "country": 82,
+    "medium": 4,
+    "sampling_method": 39,
+    "measurement": 6815,
+    "unit": 3,
+    "concentration_class": 5,
+    "reference": 93
+  },
+  "exact_duplicate_rows_in_derived_file": 0,
+  "duplicate_nonempty_ids": 0,
+  "categories": {
+    "medium": [
+      [
+        "Ocean water",
+        16988
+      ],
+      [
+        "Nurdle Patrol",
+        10615
+      ],
+      [
+        "Beach",
+        893
+      ],
+      [
+        "Ocean sediment",
+        580
+      ]
+    ],
+    "unit": [
+      [
+        "pieces/m3",
+        17881
+      ],
+      [
+        "pieces/10 mins",
+        10615
+      ],
+      [
+        "pieces kg-1 d.w.",
+        580
+      ]
+    ],
+    "concentration_class": [
+      [
+        "Medium",
+        13498
+      ],
+      [
+        "Very Low",
+        7243
+      ],
+      [
+        "High",
+        4067
+      ],
+      [
+        "Low",
+        3177
+      ],
+      [
+        "Very High",
+        1091
+      ]
+    ],
+    "ocean": [
+      [
+        "Atlantic Ocean",
+        19394
+      ],
+      [
+        "Pacific Ocean",
+        7103
+      ],
+      [
+        "(missing)",
+        1389
+      ],
+      [
+        "Indian Ocean",
+        777
+      ],
+      [
+        "Arctic Ocean",
+        386
+      ],
+      [
+        "Southern Ocean",
+        27
+      ]
+    ],
+    "sampling_method": [
+      [
+        "Neuston net",
+        10720
+      ],
+      [
+        "Hand picking",
+        10633
+      ],
+      [
+        "Manta net",
+        3204
+      ],
+      [
+        "Grab sample",
+        1389
+      ],
+      [
+        "Pump",
+        563
+      ],
+      [
+        "PVC cylinder",
+        370
+      ],
+      [
+        "Intake seawater pump",
+        284
+      ],
+      [
+        "Plankton net",
+        240
+      ],
+      [
+        "Metal trowel",
+        208
+      ],
+      [
+        "Van Dorn sampler",
+        181
+      ],
+      [
+        "Metal spoon",
+        145
+      ],
+      [
+        "Megacorer",
+        90
+      ],
+      [
+        "Metal scoop",
+        89
+      ],
+      [
+        "Niskin bottle",
+        81
+      ],
+      [
+        "Stainless steel bucket",
+        80
+      ],
+      [
+        "Shovel",
+        72
+      ],
+      [
+        "Van Veen grab",
+        66
+      ],
+      [
+        "Trowel",
+        60
+      ],
+      [
+        "Stainless steel corer",
+        58
+      ],
+      [
+        "Aluminum bucket",
+        57
+      ],
+      [
+        "Stainless steel spoon",
+        50
+      ],
+      [
+        "CTD rosette sampler",
+        48
+      ],
+      [
+        "Ekman dredge",
+        45
+      ],
+      [
+        "Steel bucket",
+        43
+      ],
+      [
+        "Remotely operated vehicle",
+        40
+      ],
+      [
+        "AVANI net",
+        36
+      ],
+      [
+        "Petite Ponar benthic grab",
+        36
+      ],
+      [
+        "Bongo net",
+        33
+      ],
+      [
+        "Stainless steel spatula",
+        32
+      ],
+      [
+        "Sediment grab sampler",
+        26
+      ],
+      [
+        "Stainless steel sampler",
+        23
+      ],
+      [
+        "Day grab",
+        17
+      ],
+      [
+        "Metal shovel",
+        14
+      ],
+      [
+        "Ekman grab",
+        10
+      ],
+      [
+        "Shipek grab sampler",
+        9
+      ],
+      [
+        "Box corer",
+        7
+      ],
+      [
+        "Kubiena box",
+        7
+      ],
+      [
+        "Surface water intake",
+        5
+      ],
+      [
+        "Glass jar",
+        5
+      ]
+    ]
+  },
+  "measurement_summary_by_unit": {
+    "pieces/m3": {
+      "count": 17881,
+      "min": 0.0,
+      "max": 800000.0,
+      "mean": 473.98594263078127,
+      "median": 0.01296
+    },
+    "pieces kg-1 d.w.": {
+      "count": 580,
+      "min": 0.0,
+      "max": 40510.0,
+      "mean": 355.802352887931,
+      "median": 52.726682999999994
+    },
+    "pieces/10 mins": {
+      "count": 10615,
+      "min": 0.0,
+      "max": 328445.0,
+      "mean": 160.81139896373057,
+      "median": 10.0
+    }
+  }
+}

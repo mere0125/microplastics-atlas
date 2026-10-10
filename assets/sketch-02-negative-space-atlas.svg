@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Sketch 2: Negative-space atlas</title>
+  <desc id="desc">A concept sketch for a world map emphasizing unequal data coverage.</desc>
+  <rect width="1200" height="700" fill="#f2f0e9"/>
+  <path d="M105 93 H1096" fill="none" stroke="#183139" stroke-width="2"/>
+  <text x="105" y="65" font-family="Georgia,serif" font-size="28" fill="#183139">02 / negative-space atlas</text>
+  <g transform="translate(120 145)" fill="#dbe7e5" stroke="#183139" stroke-width="2">
+    <path d="M65 143 C108 70 173 39 249 51 C297 59 343 91 374 123 C321 137 292 157 268 189 C229 238 212 288 171 330 C141 308 133 266 106 247 C78 226 41 218 24 187 Z"/>
+    <path d="M286 333 C323 355 353 400 351 459 C349 507 320 548 288 563 C271 510 245 470 247 419 C249 383 263 355 286 333 Z"/>
+    <path d="M469 118 C519 69 590 56 650 75 C683 86 714 109 749 111 C792 113 830 91 875 103 C911 113 944 141 966 168 C914 178 864 173 821 190 C779 206 754 239 716 248 C665 260 618 235 579 206 C546 181 507 160 469 160 Z"/>
+    <path d="M775 309 C808 279 855 273 892 291 C920 306 932 336 924 363 C891 374 860 394 826 388 C794 382 769 353 775 309 Z"/>
+  </g>
+  <g fill="#2d7188" opacity=".58">
+    <circle cx="271" cy="279" r="5"/><circle cx="281" cy="294" r="4"/><circle cx="302" cy="246" r="6"/><circle cx="347" cy="325" r="5"/>
+    <circle cx="410" cy="273" r="4"/><circle cx="713" cy="268" r="5"/><circle cx="763" cy="288" r="6"/><circle cx="822" cy="258" r="4"/>
+    <circle cx="851" cy="319" r="5"/><circle cx="931" cy="332" r="5"/><circle cx="1003" cy="285" r="4"/>
+  </g>
+  <g fill="none" stroke="#c27b43" stroke-width="2" opacity=".7">
+    <circle cx="272" cy="318" r="11"/><circle cx="296" cy="334" r="9"/><circle cx="356" cy="349" r="10"/><circle cx="414" cy="327" r="9"/>
+  </g>
+  <path d="M512 443 C623 414 733 421 821 467" fill="none" stroke="#8e4f43" stroke-width="2" stroke-dasharray="7 8"/>
+  <g font-family="Georgia,serif" fill="#183139" font-size="18" font-style="italic">
+    <text x="505" y="485">the empty ocean may be unsampled</text>
+    <text x="799" y="595">map observations, not imagined absence</text>
+  </g>
+</svg>

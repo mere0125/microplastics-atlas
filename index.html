@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An interactive study of where and when NOAA's marine microplastics observations were collected."
+    />
+    <title>The Ocean Remembers Where We Looked — Mere Cui</title>
+    <link rel="stylesheet" href="styles.css?v=20261009-3" />
+  </head>
+  <body class="scene-locked">
+    <div class="ocean-stage" aria-hidden="true">
+      <video class="ocean-film" autoplay muted loop playsinline preload="auto">
+        <source src="assets/ocean-surface.webm" type="video/webm" />
+      </video>
+      <div class="ocean-veil"></div>
+      <canvas class="ambient-sea" id="ambientSea"></canvas>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="shell-cursor" id="shellCursor" aria-hidden="true">
+      <svg viewBox="0 0 48 48">
+        <path class="shell-body" d="M8 34c5-15 17-25 29-22 7 2 7 12 1 18-7 8-19 10-30 4Z" />
+        <path class="shell-line" d="M37 13c-12 2-18 10-17 17 1 5 8 6 12 2 5-5 3-11-2-12-4-1-8 2-8 6 0 3 4 5 7 3 2-1 3-4 1-6" />
+        <path class="shell-line" d="M11 32 5 39M15 34l-3 9M21 35l1 9M27 34l5 7" />
+      </svg>
+    </div>
+    <div class="loading-screen" id="loadingScreen" role="status" aria-live="polite">
+      <div class="loading-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p>Developing the field notes…</p>
+    </div>
+
+    <section class="portal" id="portal" aria-labelledby="portalTitle">
+      <div class="surface-glow" aria-hidden="true"></div>
+      <div class="portal-coordinate" aria-hidden="true">00° 00′ 00″ · surface</div>
+      <div class="portal-copy">
+        <p class="portal-course">Data Visualization for Architecture, Urbanism, Humanity — Fall 2026</p>
+        <h1 id="portalTitle">the ocean remembers<br /><em>where we looked</em></h1>
+        <p class="portal-dek">
+          A submerged archive of 29,076 encounters with plastic.<br />Not a map of the ocean—a map of our attention.
+        </p>
+        <button class="enter-button" id="enterButton" type="button">
+          <span class="enter-ring" aria-hidden="true"></span>
+          <span>descend into the archive</span>
+        </button>
+      </div>
+      <p class="portal-instruction">move slowly · the water follows</p>
+      <svg class="portal-tide" viewBox="0 0 1600 280" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-80 130 C110 40 235 205 430 118 S742 35 930 131 S1305 212 1680 92" />
+        <path d="M-90 162 C115 87 281 232 472 151 S790 81 968 166 S1302 240 1695 135" />
+        <path d="M-60 194 C155 139 284 251 505 192 S842 137 1034 207 S1362 262 1690 177" />
+      </svg>
+    </section>
+
+    <header class="masthead">
+      <p class="course-line">Data Visualization for Architecture, Urbanism, Humanity — Fall 2026</p>
+      <div class="title-grid">
+        <p class="folio">Below surface<br />Depth 01</p>
+        <div>
+          <h2 class="archive-title">An archive of<br /><em>observed fragments.</em></h2>
+          <p class="dek">
+            Each observation entered this archive through a net, a pump, a sediment core, or a pair of hands.
+            Together they reveal both a material crisis and the uneven shape of scientific attention.
+          </p>
+        </div>
+        <p class="signature">Mere Cui<br />29,076 signals</p>
+      </div>
+      <svg class="tideline" viewBox="0 0 1200 42" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,23 C120,4 208,39 332,20 C466,0 535,40 673,18 C812,-4 918,37 1200,14" />
+        <path d="M0,31 C145,14 238,41 390,28 C548,13 648,42 796,25 C952,8 1060,28 1200,22" />
+      </svg>
+    </header>
+
+    <main>
+      <section class="visual-study" aria-labelledby="chartTitle">
+        <div class="study-heading">
+          <div>
+            <p class="eyebrow">Observation archive · 1972—2026</p>
+            <h2 id="chartTitle">Latitude of <span class="glow-word">attention</span></h2>
+          </div>
+          <p class="chart-intro">
+            Each mark is one sample in NOAA’s harmonized database. Read across for time and up or down
+            for latitude. Dense constellations show repeated observation—<span class="glow-inline">not necessarily more pollution.</span>
+          </p>
+        </div>
+
+        <div class="instrument-panel">
+          <div class="controls" aria-label="Chart controls">
+            <div class="control-group">
+              <p class="control-label">Marine setting</p>
+              <div class="filter-list" id="filterList"></div>
+            </div>
+
+            <div class="control-group playback-group">
+              <p class="control-label">Time</p>
+              <button class="play-button" id="playButton" type="button">
+                <span class="play-icon" aria-hidden="true">▶</span>
+                <span class="play-label">Play the archive</span>
+              </button>
+              <button class="text-button" id="resetButton" type="button">Reset view</button>
+            </div>
+
+            <div class="visible-ledger" aria-live="polite">
+              <span id="visibleCount">—</span>
+              <small>visible records</small>
+              <span id="visibleYears">—</span>
+              <small>selected years</small>
+            </div>
+          </div>
+
+          <figure class="chart-figure">
+            <div class="chart-wrap" id="chartWrap">
+              <canvas id="particleCanvas" aria-hidden="true"></canvas>
+              <svg id="chartSvg" role="img" aria-labelledby="chartTitle chartDescription">
+                <desc id="chartDescription">
+                  A time-by-latitude scatterplot of NOAA marine microplastics observations. Interactive
+                  filters select marine settings and a timeline brush selects years.
+                </desc>
+              </svg>
+              <div class="equator-label" aria-hidden="true">equator</div>
+              <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+              <p class="axis-whisper north" aria-hidden="true">north</p>
+              <p class="axis-whisper south" aria-hidden="true">south</p>
+            </div>
+
+            <div class="navigator-wrap">
+              <p class="navigator-note">Drag the two handles to narrow time</p>
+              <svg id="navigatorSvg" role="img" aria-label="Year range selector"></svg>
+            </div>
+
+            <figcaption>
+              Hover or move across the chart to inspect the closest record. Color and shape distinguish
+              the four sampling settings; the vertical position always preserves recorded latitude.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="closing-reading" aria-labelledby="readingTitle">
+        <div class="closing-heading">
+          <p class="eyebrow">A note before leaving the water</p>
+          <h2 id="readingTitle"><span class="glow-word">Blank water</span><br />is not clean water.</h2>
+        </div>
+
+        <div class="closing-prose">
+          <p>
+            NOAA calls this a <strong>presence-only archive</strong>. An empty region or year may simply mean
+            that nobody contributed an observation there. The gaps describe the limits of our attention,
+            not the absence of plastic.
+          </p>
+          <p>
+            The imbalance is visible inside the collection itself: <strong>58.4%</strong> of records come from
+            ocean water, <strong>36.5%</strong> from Nurdle Patrol surveys, and <strong>94.1%</strong> were recorded
+            north of the equator.
+          </p>
+        </div>
+
+        <aside class="margin-reading" aria-label="Measurement caution">
+          <span aria-hidden="true">≈</span>
+          <p>
+            Three measurement units coexist here. They cannot be collapsed into one honest concentration
+            ranking, so this chart stays with the geography and timing of observation.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-sources">
+        <p>
+          Data: <a href="https://doi.org/10.25921/v8gj-k896">NOAA NCEI Global Marine Microplastics Harmonized Database</a>,
+          accessed October 9, 2026. Visualization and analysis by Mere Cui.
+        </p>
+        <p class="film-credit">
+          Ocean footage: <a href="https://commons.wikimedia.org/wiki/File:Waves_of_the_sea_(Video).webm">“Waves of the sea”</a>
+          by Amada44, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+        </p>
+      </div>
+      <p class="footer-note">Every point is evidence. Every gap is a question.</p>
+    </footer>
+
+    <script src="vendor/d3.v7.min.js"></script>
+    <script src="script.js?v=20261009-3"></script>
+  </body>
+</html>

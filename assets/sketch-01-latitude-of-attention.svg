@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Sketch 1: Latitude of attention</title>
+  <desc id="desc">A hand-drawn concept sketch for a time by latitude plot of microplastic observations.</desc>
+  <rect width="1200" height="700" fill="#f2f0e9"/>
+  <g fill="none" stroke="#183139" stroke-width="2">
+    <path d="M105 93 H1096"/>
+    <path d="M165 150 V585 H1080"/>
+    <path d="M165 368 C394 360 677 376 1080 364" stroke-dasharray="7 9" opacity=".42"/>
+  </g>
+  <g font-family="Georgia,serif" fill="#183139">
+    <text x="105" y="65" font-size="28">01 / latitude of attention</text>
+    <text x="165" y="128" font-size="18" font-style="italic">every speck is one observation</text>
+    <text x="93" y="166" font-size="16">90°N</text><text x="115" y="374" font-size="16">0°</text><text x="90" y="588" font-size="16">90°S</text>
+    <text x="162" y="620" font-size="16">1972</text><text x="1032" y="620" font-size="16">2026</text>
+    <text x="420" y="669" font-size="17" font-style="italic">time →</text>
+  </g>
+  <g fill="#2d7188" opacity=".64">
+    <circle cx="245" cy="281" r="4"/><circle cx="257" cy="286" r="3"/><circle cx="263" cy="247" r="4"/><circle cx="292" cy="295" r="3"/>
+    <circle cx="410" cy="243" r="4"/><circle cx="417" cy="239" r="3"/><circle cx="424" cy="320" r="3"/><circle cx="510" cy="261" r="4"/>
+    <circle cx="689" cy="210" r="4"/><circle cx="703" cy="216" r="4"/><circle cx="712" cy="287" r="3"/><circle cx="727" cy="275" r="4"/>
+    <circle cx="742" cy="192" r="3"/><circle cx="785" cy="315" r="4"/><circle cx="819" cy="227" r="3"/><circle cx="847" cy="264" r="4"/>
+    <circle cx="874" cy="185" r="3"/><circle cx="915" cy="232" r="4"/><circle cx="941" cy="299" r="3"/><circle cx="1003" cy="257" r="4"/>
+  </g>
+  <g fill="#c27b43" opacity=".82" font-family="Arial,sans-serif" font-size="19">
+    <text x="723" y="342">×</text><text x="737" y="350">×</text><text x="758" y="329">×</text><text x="779" y="339">×</text>
+    <text x="801" y="355">×</text><text x="835" y="344">×</text><text x="870" y="327">×</text><text x="930" y="348">×</text>
+  </g>
+  <g fill="#8e4f43" opacity=".72"><rect x="679" y="450" width="8" height="8"/><rect x="767" y="485" width="8" height="8"/><rect x="903" y="431" width="8" height="8"/></g>
+  <g fill="none" stroke="#8e789d" stroke-width="3"><circle cx="612" cy="332" r="6"/><circle cx="824" cy="402" r="6"/><circle cx="972" cy="387" r="6"/></g>
+  <path d="M924 150 C989 126 1030 131 1091 160" fill="none" stroke="#183139" stroke-width="1.5"/>
+  <text x="936" y="113" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#183139">filter + hover + time brush</text>
+</svg>
