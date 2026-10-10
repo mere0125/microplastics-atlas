@@ -58,7 +58,6 @@ body.entered .portal { transform: translateY(-104%); opacity: 0; visibility: hid
 .surface-glow { position: absolute; left: 50%; top: -42vh; width: 140vw; height: 78vh; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(ellipse, rgba(200, 235, 227, 0.33), rgba(71, 143, 148, 0.08) 45%, transparent 72%); filter: blur(18px); animation: breathe 8s ease-in-out infinite alternate; }
 @keyframes breathe { from { transform: translateX(-50%) scale(0.96); opacity: 0.65; } to { transform: translateX(-50%) scale(1.05); opacity: 1; } }
 .portal-copy { position: relative; z-index: 2; width: min(1120px, calc(100% - 3rem)); padding-top: 2vh; text-align: center; }
-.portal-course { margin: 0 0 clamp(2.5rem, 7vh, 5.5rem); color: rgba(231, 238, 233, 0.68); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.035em; }
 .portal h1 { margin: 0; font: 250 clamp(3.8rem, 9.8vw, 9.8rem)/0.82 var(--serif); letter-spacing: -0.055em; text-shadow: 0 3px 30px rgba(0, 0, 0, 0.34); }
 .portal h1 em { display: inline-block; color: #c2fffb; font-style: normal; font-weight: 200; letter-spacing: 0.005em; text-shadow: 0 0 9px rgba(142, 255, 248, 0.78), 0 0 34px rgba(89, 212, 210, 0.4); }
 .portal-dek { margin: clamp(2.5rem, 6vh, 4.5rem) auto 2.5rem; color: rgba(231, 238, 233, 0.78); font: 400 clamp(0.95rem, 1.25vw, 1.22rem)/1.65 var(--serif); }
@@ -77,8 +76,7 @@ body.entered .portal { transform: translateY(-104%); opacity: 0; visibility: hid
 .masthead, main, footer { position: relative; z-index: 1; width: min(1540px, calc(100% - 8vw)); margin-inline: auto; transition: opacity 900ms ease; }
 .masthead { min-height: 96svh; padding-top: 2.2rem; }
 .masthead:focus { outline: none; }
-.course-line, .eyebrow, .control-label, .navigator-note { margin: 0; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.035em; }
-.course-line { padding-bottom: 0.8rem; border-bottom: 1px solid var(--rule); color: var(--muted); }
+.eyebrow, .control-label, .navigator-note { margin: 0; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.035em; }
 .title-grid { display: grid; grid-template-columns: minmax(90px, 0.55fr) minmax(0, 4.4fr) minmax(135px, 0.9fr); gap: 2rem; align-items: start; padding: clamp(8rem, 19vh, 13rem) 0 4rem; }
 .folio, .signature { margin: 0.75rem 0 0; color: var(--muted); font-size: 0.68rem; line-height: 1.65; letter-spacing: 0.025em; }
 .signature { text-align: right; }
@@ -190,11 +188,9 @@ footer p { margin: 0; max-width: 780px; }
 }
 @media (max-width: 560px) {
   .portal-copy { width: calc(100% - 2rem); }
-  .portal-course { font-size: 0.52rem; line-height: 1.6; margin-bottom: 3.5rem; }
   .portal h1 { font-size: clamp(3.15rem, 15vw, 4.6rem); line-height: 0.86; }
   .portal-dek { max-width: 310px; font-size: 0.9rem; }
   .portal-instruction { display: none; }
-  .course-line { font-size: 0.53rem; line-height: 1.5; }
   .archive-title { line-height: 0.88; }
   .archive-title br { display: none; }
   .dek { width: 100%; margin: 2rem 0 0; }
